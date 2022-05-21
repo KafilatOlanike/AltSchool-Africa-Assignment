@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <style>
+    .container {
+      width: 100%;
+      height: 10vh;
+      background-color: purple;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    .navigation_list {
+      display: flex;
+      width: 300px;
+      color: white;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+    .navigation_list a {
+      color: white;
+      text-decoration: none;
+    }
+    .navigation_list a:hover {
+      color: rgb(159, 159, 238);
+    }
+    .formcontainer {
+      display: flex;
+      flex-direction: column;
+      background-color: #fffdd0;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      justify-content: center;
+      height: 50vh;
+    }
+    button {
+      margin-top: 10px;
+      border-radius: 25px;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: red;
+    }
+    body h2 {
+      color: black;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AltSchool K.O Assignment 1</title>
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      <body>
+        <section>
+          <!--Navigation-->
+          <nav class="container">
+            <h1 class="container_brandname">My Assignment 1</h1>
+
+            <div class="navigation_container">
+              <ul class="navigation_list">
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="ContactPage.html">Contact</a></li>
+                <li><a href="LoginPage.html">Login</a></li>
+                <li>
+                  <a href="RegisterPage.html">Register</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </section>
+
+        <h2>Please log in</h2>
+        <!-- <div class="container"> -->
+        <form class="formcontainer" action="" method="post">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" class="username" />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="password"
+          />
+          <button>Sign in</button>
+        </form>
+        <!-- </div>
+        <div> -->
+        <!-- <a href="RegisterPage.html" target="_blank">Register</a> -->
+        <!-- </div> -->
+      </body>
+    </html>
+  </body>
+</html>

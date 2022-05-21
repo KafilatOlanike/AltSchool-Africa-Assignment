@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page using Forms</title>
+  </head>
+  <style>
+    ul {
+      list-style: none;
+    }
+    .container {
+      width: 100%;
+      height: 10vh;
+      background-color: purple;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 6px;
+      padding-left: 6px;
+    }
+    .navigation_list {
+      display: flex;
+      width: 300px;
+      color: white;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+    .navigation_list a {
+      color: white;
+      text-decoration: none;
+    }
+    .navigation_list a:hover {
+      color: rgb(159, 159, 238);
+    }
+    .formcontainer {
+      display: flex;
+      flex-direction: column;
+      background-color: #fffdd0;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      justify-content: center;
+      height: 50vh;
+    }
+    button {
+      margin-top: 10px;
+      border-radius: 25px;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: red;
+    }
+  </style>
+  <body>
+    <!--Navigation-->
+    <nav class="container">
+      <h1 class="container_brandname">My Assignment 1</h1>
+
+      <div class="navigation_container">
+        <ul class="navigation_list">
+          <li><a href="AboutMe.html">About Me</a></li>
+          <li><a href="ContactPage.html">Contact</a></li>
+          <li><a href="LoginPage.html">Login</a></li>
+          <li>
+            <a href="RegisterPage.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="formcontainer">
+      <form class="formcontainer" action="" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" class="name" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="email" />
+        <label for="message">Message</label>
+        <input
+          type="message"
+          name="message"
+          id="message"
+          class="message"
+          required
+        />
+        <label for="priority">Priority</label>
+        <select name="priority">
+          <option value="high">High</option>
+          <option value="low">Low</option>
+          <option value="can_wait">Can wait</option>
+        </select>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
